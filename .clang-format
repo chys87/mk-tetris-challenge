@@ -1,0 +1,14 @@
+BasedOnStyle: Google
+IncludeCategories:
+- Regex:           '^<[^/]*\.h>'
+  Priority:        10
+  SortPriority:    10
+- Regex:           '^<(bits|sys|linux|asm)/.*'
+  Priority:        10
+  SortPriority:    11
+- Regex:           '^<[^/]*>'
+  Priority:        20
+- Regex:           '^<.*'
+  Priority:        30
+- Regex:           '.*'
+  Priority:        100
